@@ -41,13 +41,13 @@ def send_message(messagebody):
     # Jack
     message = client.messages.create(from_="+111",
                                      body=messagebody + " Signal Sent out Time:" + datetime.now().strftime(
-                                         '%Y-%m-%d %H:%M:%S'), to="+8613581804397")
+                                         '%Y-%m-%d %H:%M:%S'), to="+111")
     print(message.sid)
     print("发送短信成功")
     # Juno
     message = client.messages.create(from_="+111",
                                      body=messagebody + " Signal Sent out Time:" + datetime.now().strftime(
-                                         '%Y-%m-%d %H:%M:%S'), to="+8615650791570")
+                                         '%Y-%m-%d %H:%M:%S'), to="+111")
     print(message.sid)
     print("发送短信成功")
 
