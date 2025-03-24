@@ -32,15 +32,15 @@ def MaxBounceBack(return_list):
 
 
 def send_message(messagebody):
-    account_sid = "AC365fdae5090e1e035b8f038b144176f5"
-    auth_token = "6022cc537b66a6a2548aaea197ce2a26"
+    account_sid = "111"
+    auth_token = "111"
     client = Client(account_sid,auth_token)
     # Jack
-    message = client.messages.create(from_ = "+12566676073",body=messagebody + " Signal Sent out Time:"+ datetime.now().strftime('%Y-%m-%d %H:%M:%S'),to="+8613581804397")
+    message = client.messages.create(from_ = "+111",body=messagebody + " Signal Sent out Time:"+ datetime.now().strftime('%Y-%m-%d %H:%M:%S'),to="+8613581804397")
     print(message.sid)
     print("发送短信成功")
     # Juno
-    message = client.messages.create(from_ = "+12566676073",body=messagebody + " Signal Sent out Time:"+ datetime.now().strftime('%Y-%m-%d %H:%M:%S'),to="+8615650791570")
+    message = client.messages.create(from_ = "+111",body=messagebody + " Signal Sent out Time:"+ datetime.now().strftime('%Y-%m-%d %H:%M:%S'),to="+8615650791570")
     print(message.sid)
     print("发送短信成功")
     
